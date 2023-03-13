@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Left Sidebar with Contact and About Pages</title>
+	<style>
+		.sidebar {
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 200px;
+			background-color: #f1f1f1;
+			padding: 20px;
+			box-sizing: border-box;
+			overflow-y: scroll;
+		}
+
+		.content {
+			margin-left: 200px;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+	<div class="sidebar">
+		<h2>Left Sidebar</h2>
+		<ul>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#about">About</a></li>
+		</ul>
+	</div>
+	<div class="content">
+		<h2>Right Content Area</h2>
+		<p>This is the content that will be displayed on the right side of the screen when you click on the "Contact" or "About" links.</p>
+		<p>To create this layout, we used CSS to position the sidebar on the left side of the screen and give it a fixed width. We also used CSS to give the content area a left margin of the same width as the sidebar, so it appears next to the sidebar.</p>
+		<p>To make the links work, we used anchor tags with the href attribute set to the IDs of the corresponding sections of the content area. For example, the "Contact" link has an href of "#contact", which matches the ID of the contact section of the content area.</p>
+		<h3 id="contact">Contact</h3>
+		<p>This is the contact section of the content area. It will be displayed when you click on the "Contact" link in the sidebar.</p>
+		<h3 id="about">About</h3>
+		<p>This is the about section of the content area. It will be displayed when you click on the "About" link in the sidebar.</p>
+	</div>
+</body>
+</html>
